@@ -69,7 +69,6 @@ public class Product {
     public Product() {
 
     }
-
         public void addProducts(){
         productList.add(new Product("Choklad" , 10.50,100));
         productList.add(new Product("Pepsi" , 113.50,0));
