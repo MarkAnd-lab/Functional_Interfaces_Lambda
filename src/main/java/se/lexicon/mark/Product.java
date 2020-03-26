@@ -31,7 +31,7 @@ public class Product {
         this.price = price;
     }
 
-    public int getStock() {
+    public int getStock(int i) {
         return this.stock;
     }
 
@@ -45,19 +45,18 @@ public class Product {
                 "productName='" + productName + '\'' +
                 ", price=" + price +
                 ", stock=" + stock +
-                //", productList=" + productList +
                 '}';
 
     }
 
-    //method that takes a List of Products, a Conditional and an Action as arguments
+
     //constructor
     public Product(String productName, double price, int stock) {
         this.productName = productName;
         this.price = price;
         this.stock = stock;
     }
-
+    //method that takes a List of Products, a Conditional and an Action as arguments
       public static List<Product> productOperator(Conditional conditional, Action action, List<Product> productList){
         List<Product> tempProduct = new ArrayList<>();
         for (Product product : productList) {
